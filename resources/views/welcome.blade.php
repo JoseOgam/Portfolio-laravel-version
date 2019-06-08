@@ -5,24 +5,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap'" rel="stylesheet">
+    <link rel="stylesheet" href="{{('fonts/icomoon/style.css')}}">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/jquery-ui.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="{{('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{('css/jquery-ui.css')}}">
+    <link rel="stylesheet" href="{{('css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{('css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{('css/owl.theme.default.min.css')}}">
 
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="{{('css/jquery.fancybox.min.css')}}">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="{{('css/bootstrap-datepicker.css')}}">
 
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="{{('fonts/flaticon/font/flaticon.css')}}">
 
-    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="{{('css/aos.css')}}">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{('css/style.css')}}">
 
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -178,40 +178,40 @@
                     <div class="mb-5">
                         <strong class="text-black">PHP/laravel</strong>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                  aria-valuemax="100"
-                                 style="width: 89%;">
-                                <span>89%</span>
+                                 style="width: 60%;">
+                                <span>60%</span>
                             </div>
                         </div>
                     </div>
                     <div class="mb-5">
                         <strong class="text-black">python/django</strong>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                  aria-valuemax="100"
-                                 style="width: 75%;">
-                                <span>75%</span>
+                                 style="width: 60%;">
+                                <span>60%</span>
                             </div>
                         </div>
                     </div>
                     <div class="mb-5">
                         <strong class="text-black">javascript</strong>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                  aria-valuemax="100"
-                                 style="width: 94%;">
-                                <span>94%</span>
+                                 style="width: 40%;">
+                                <span>40%</span>
                             </div>
                         </div>
                     </div>
                     <div class="mb-5">
                         <strong class="text-black">wordpress</strong>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                            <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                                  aria-valuemax="100"
-                                 style="width: 94%;">
-                                <span>94%</span>
+                                 style="width: 30%;">
+                                <span>30%</span>
                             </div>
                         </div>
                     </div>
@@ -228,45 +228,19 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 position-relative">
-                    <h2 class="section-title text-center mb-5">My Photography</h2>
+                    <h2 class="section-title text-center mb-5">My Recent Work</h2>
                 </div>
             </div>
 
 
             <div class="row">
                 <div class="col-md-6 col-lg-4 item">
-                    <a href="images/img_1.jpg" class="item-wrap fancybox mb-4">
+                    <a href="{{('images/img_1.jpg')}}" class="item-wrap fancybox mb-4">
                         <span class="icon-search2"></span>
-                        <img class="img-fluid" src="images/img_1.jpg">
-                    </a>
-                    <a href="images/img_2.jpg" class="item-wrap fancybox mb-4">
-                        <span class="icon-search2"></span>
-                        <img class="img-fluid" src="images/img_2.jpg">
-                    </a>
-                    <a href="images/img_3.jpg" class="item-wrap fancybox mb-4">
-                        <span class="icon-search2"></span>
-                        <img class="img-fluid" src="images/img_3.jpg">
-                    </a>
-                    <a href="images/img_10.jpg" class="item-wrap fancybox mb-4">
-                        <span class="icon-search2"></span>
-                        <img class="img-fluid" src="images/img_10.jpg">
+                        <img class="img-fluid" src="{{('images/img_1.jpg')}}">
                     </a>
                 </div>
-                <div class="col-md-6 col-lg-4 item">
-                    <a href="images/img_1.jpg" class="item-wrap fancybox mb-4">
-                        <span class="icon-search2"></span>
-                        <img class="img-fluid" src="images/img_4.jpg">
-                    </a>
-                    <a href="images/img_5.jpg" class="item-wrap fancybox mb-4">
-                        <span class="icon-search2"></span>
-                        <img class="img-fluid" src="images/img_5.jpg">
-                    </a>
-                    <a href="images/img_8.jpg" class="item-wrap fancybox mb-4">
-                        <span class="icon-search2"></span>
-                        <img class="img-fluid" src="images/img_8.jpg">
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4 item">
+                <!--<div class="col-md-6 col-lg-4 item">
                     <a href="images/img_6.jpg" class="item-wrap fancybox mb-4">
                         <span class="icon-search2"></span>
                         <img class="img-fluid" src="images/img_6.jpg">
@@ -279,7 +253,7 @@
                         <span class="icon-search2"></span>
                         <img class="img-fluid" src="images/img_9.jpg">
                     </a>
-                </div>
+                </div> -->
             </div>
 
 
@@ -288,7 +262,7 @@
     </section>
 
 
-    <section class="site-section bg-primary">
+    <section class="site-section bg-dark">
         <div class="container">
             <div class="row">
                 <div class="col-12 mb-5 position-relative">
@@ -326,62 +300,11 @@
     </section>
 
 
-    <section class="site-section bg-light" id="blog-section">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-12 mb-5 position-relative">
-                    <h2 class="section-title text-center mb-5">Blog Posts</h2>
-                </div>
-
-                <div class="col-md-6 mb-5 mb-lg-0 col-lg-4">
-                    <div class="blog_entry">
-                        <a href="single.html"><img src="images/blog_1.jpg" alt="Image" class="img-fluid"></a>
-                        <div class="p-4 bg-white">
-                            <h3><a href="single.html">Why Photography Is Good For Business</a></h3>
-                            <span class="date">April 25, 2019</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit reprehenderit adipisci sed
-                                perferendis quia iure, aperiam ab?.</p>
-                            <p class="more"><a href="single.html">Read More</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 mb-5 mb-lg-0 col-lg-4">
-                    <div class="blog_entry">
-                        <a href="single.html"><img src="images/blog_2.jpg" alt="Image" class="img-fluid"></a>
-                        <div class="p-4 bg-white">
-                            <h3><a href="single.html">Why Photography Is Good For Business</a></h3>
-                            <span class="date">April 25, 2019</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit reprehenderit adipisci sed
-                                perferendis quia iure, aperiam ab?.</p>
-                            <p class="more"><a href="single.html">Read More</a></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 mb-5 mb-lg-0 col-lg-4">
-                    <div class="blog_entry">
-                        <a href="single.html"><img src="images/blog_3.jpg" alt="Image" class="img-fluid"></a>
-                        <div class="p-4 bg-white">
-                            <h3><a href="single.html">Why Photography Is Good For Business</a></h3>
-                            <span class="date">April 25, 2019</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit reprehenderit adipisci sed
-                                perferendis quia iure, aperiam ab?.</p>
-                            <p class="more"><a href="single.html">Read More</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="site-section bg-primary" id="contact-section">
+    <section class="site-section bg-dark" id="contact-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 mb-5 position-relative">
-                    <h2 class="section-title text-center text-white mb-5">Say Hello</h2>
+                    <h2 class="section-title text-center text-white mb-5">Let's chat</h2>
                 </div>
             </div>
             <form action="#" class="form">
@@ -390,7 +313,7 @@
                         <input type="text" class="form-control" placeholder="First name">
                     </div>
                     <div class="form-group col-6">
-                        <input type="text" class="form-control" placeholder="Full name">
+                        <input type="text" class="form-control" placeholder="Last name">
                     </div>
                 </div>
 
@@ -427,56 +350,59 @@
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md-3">
-                    <h3 class="footer-title">Credo</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, animi.</p>
-                    <p><span class="d-inline-block d-md-block">203 Fake St. Mountain View,</span> San Francisco,
-                        California, USA</p>
+                    <h3 class="footer-title">Ogam Software</h3>
+                    <p>Ogam Software is a web development/design company which focuses on business startups to help them
+                        scale up and build their customer base</p>
+                    <p><span class="d-inline-block d-md-block">Kisumu Town,</span> Kisumu County,
+                        Kenya</p>
                 </div>
                 <div class="col-md-5 mx-auto">
                     <div class="row">
                         <div class="col-lg-4">
                             <h3 class="footer-title">Services</h3>
                             <ul class="list-unstyled">
-                                <li><a href="#">Wedding</a></li>
-                                <li><a href="#">Portrait</a></li>
-                                <li><a href="#">Photography</a></li>
+                                <li><a href="#">Web design</a></li>
+                                <li><a href="#">Web development</a></li>
+                                <li><a href="#">Digital marketing</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-4">
+                        <!--<div class="col-lg-4">
                             <h3 class="footer-title">Resources</h3>
                             <ul class="list-unstyled">
-                                <li><a href="#">Wedding</a></li>
-                                <li><a href="#">Portrait</a></li>
-                                <li><a href="#">Photography</a></li>
+                                <li><a href="#">Web design</a></li>
+                                <li><a href="#">Web development</a></li>
+                                <li><a href="#">Digital marketing</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-4">
                             <h3 class="footer-title">Quick Links</h3>
                             <ul class="list-unstyled">
-                                <li><a href="#">Wedding</a></li>
-                                <li><a href="#">Portrait</a></li>
-                                <li><a href="#">Photography</a></li>
+                                <li><a href="#"></a>Web design</li>
+                                <li><a href="#">Web development</a></li>
+                                <li><a href="#">Digital marketing</a></li>
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3">
-                    <h3 class="footer-title">Follow Me</h3>
-                    <a href="#" class="social-circle p-2"><span class="icon-twitter"></span></a>
-                    <a href="#" class="social-circle p-2"><span class="icon-facebook"></span></a>
-                    <a href="#" class="social-circle p-2"><span class="icon-instagram"></span></a>
-                    <a href="#" class="social-circle p-2"><span class="icon-dribbble"></span></a>
-                    <a href="#" class="social-circle p-2"><span class="icon-linkedin"></span></a>
-                </div>
-            </div>
+                </div> -->
+                        <div class="col-6">
+                            <h3 class="footer-title">Follow Me</h3>
+                            <a href="#" class="social-circle p-2"><span class="icon-twitter"></span></a>
+                            <a href="#" class="social-circle p-2"><span class="icon-facebook"></span></a>
+                            <a href="#" class="social-circle p-2"><span class="icon-instagram"></span></a>
+                            <a href="#" class="social-circle p-2"><span class="icon-github"></span></a>
+                            <a href="#" class="social-circle p-2"><span class="icon-linkedin"></span></a>
+                        </div>
+                    </div>
 
-            <div class="row">
-                <div class="col-12 text-center">
+                    <div class="row">
+                        <div class="col-lg-6 text-center">
 
-                    <p>Copyright &copy;
-                        <script>document.write(new Date().getFullYear());</script>
-                        All rights reserved | JoseOgam
+                            <p>Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script>
+                                All rights reserved | JoseOgam
 
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
