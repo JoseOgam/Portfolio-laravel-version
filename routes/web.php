@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Auth::routes();
@@ -20,3 +20,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/work', 'WorkController@index')->name('work');
+
+Route::post('/chat', 'ChatController@store');
+
+Route::get('/index', 'ChatController@index')->name('index');
+
+/**Route::get('/', 'chatController@index')->name(''); **/
