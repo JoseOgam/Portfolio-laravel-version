@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Chat;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,7 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $chat = Chat::all();
+        return view('home', compact('chat'));
     }
 
     public function store(){

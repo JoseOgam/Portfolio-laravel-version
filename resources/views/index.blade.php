@@ -55,14 +55,14 @@
                 </div>
 
                 <div class=" text-center mx-5">
-                    <h1 class="m-0 site-logo"><a href="welcome.blade.php">Ogam</a></h1>
+                    <h1 class="m-0 site-logo"><a href="#">Ogam</a></h1>
                 </div>
 
                 <div class="text-left">
 
                     <nav class="site-navigation position-relative" role="navigation">
                         <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                            <li><a href="#blog-section" class="nav-link">Blog</a></li>
+                            <li><a href="#Projects-section" class="nav-link">Projects</a></li>
                             <li><a href="#contact-section" class="nav-link">Contact</a></li>
                         </ul>
                     </nav>
@@ -88,7 +88,7 @@
                 <div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
                     <div class="row">
                         <div class="col-lg-6">
-                            <h1 class="text-white">I'm Jose Ogam</h1>
+                            <h1 class="text-white">Hi, call me Jose</h1>
                             <p class="text-secondary">Web designer <span class="mx-3">|</span>UI developer</p>
                             <p class="lead"> hello world am junior fullstack web developer based in Kisumu.</p>
                             <p><a href="#contact-section" class="btn smoothscroll btn-primary">Contact Me</a></p>
@@ -221,13 +221,13 @@
     </div>
 
 
-    <section class="site-section block__62272" id="portfolio-section">
+    <section class="site-section block__62272" id="Projects-section">
 
 
         <div class="container">
             <div class="row mb-5">
                 <div class="col-12 position-relative">
-                    <h2 class="section-title text-center mb-5">My Recent Work</h2>
+                    <h2 class="section-title text-center mb-5">My Recent Projects</h2>
                 </div>
             </div>
 
@@ -274,7 +274,7 @@
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste sunt nobis modi, ducimus
                             magnam sint? Soluta delectus mollitia, incidunt reprehenderit rerum tempore optio excepturi
                             aut, error voluptatem laborum quae eum.</p>
-                        <p><cite>&mdash; Graig Smith</cite></p>
+                        <p><cite>~ Nancy Auma</cite></p>
                     </blockquote>
                 </div>
                 <div class="slide">
