@@ -36,7 +36,7 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
+
             'description' => 'required',
             'project_title' => 'required',
             'source_code' => 'required',
@@ -46,7 +46,6 @@ class ProjectController extends Controller
 
         $project = new Project();
 
-        $project->image = $request->input('image');
         $project->description = $request->input('description');
         $project->project_title = $request->input('project_title');
         $project->source_code = $request->input('source_code');

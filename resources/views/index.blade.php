@@ -105,11 +105,11 @@
 
     </div>
 
-    <div class="site-section bg-light" id="services-section">
+    <div class="site-section bg-dark" id="services-section">
         <div class="container">
             <div class="row ">
                 <div class="col-12 mb-5 position-relative">
-                    <h2 class="section-title text-center mb-5">I do</h2>
+                    <h2 class="section-title text-center mb-5 text-light">I do...</h2>
                 </div>
 
                 <div class="col-md-6 mb-4">
@@ -167,7 +167,7 @@
                         <div class="progress-bar bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                              aria-valuemax="100"
                              style="width: 70%;">
-                            <span>70%</span>
+                            <span class="bg-info">70%</span>
                         </div>
                     </div>
                 </div>
@@ -177,7 +177,7 @@
                         <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                              aria-valuemax="100"
                              style="width: 60%;">
-                            <span>60%</span>
+                            <span class="bg-danger">60%</span>
                         </div>
                     </div>
                 </div>
@@ -187,7 +187,7 @@
                         <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                              aria-valuemax="100"
                              style="width: 70%;">
-                            <span>70%</span>
+                            <span class="bg-warning">70%</span>
                         </div>
                     </div>
                 </div>
@@ -197,7 +197,7 @@
                         <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                              aria-valuemax="100"
                              style="width: 55%;">
-                            <span>55%</span>
+                            <span class="bg-success">55%</span>
                         </div>
                     </div>
                 </div>
@@ -207,7 +207,7 @@
                         <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                              aria-valuemax="100"
                              style="width: 55%;">
-                            <span>55%</span>
+                            <span class="bg-dark">55%</span>
                         </div>
                     </div>
                 </div>
@@ -217,7 +217,27 @@
                         <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="0" aria-valuemin="0"
                              aria-valuemax="100"
                              style="width: 75%;">
-                            <span>75%</span>
+                            <span class="bg-dark">75%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <strong class="text-info">js/React</strong>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                             aria-valuemax="100"
+                             style="width: 40%;">
+                            <span class="bg-info">40%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <strong class="text-success">Android</strong>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                             aria-valuemax="100"
+                             style="width: 30%;">
+                            <span class="bg-success">30%</span>
                         </div>
                     </div>
                 </div>
@@ -253,7 +273,7 @@
                         I just choose the page, make the change and click save.
 
                         Thanks, man</p>
-                    <p><cite>&mdash; Ryan Peter, CEO Street Food</cite></p>
+                    <p><cite>&mdash; Margaret Awino, CEO Street Food</cite></p>
                 </blockquote>
             </div>
         </div>
@@ -333,11 +353,13 @@
         <div class="row mb-5">
             <div class="col-12 text-center">
                 <h3 class="footer-title">Follow Me</h3>
-                <a href="#" class="social-circle p-2"><span class="icon-twitter"></span></a>
-                <a href="#" class="social-circle p-2"><span class="icon-facebook"></span></a>
-                <a href="#" class="social-circle p-2"><span class="icon-instagram"></span></a>
-                <a href="#" class="social-circle p-2"><span class="icon-github"></span></a>
-                <a href="#" class="social-circle p-2"><span class="icon-linkedin"></span></a>
+                <a href="{{('https://twitter.com/joseogam')}}" class="social-circle p-2"><span class="icon-twitter">
+                    </span></a>
+                <a href="{{('https://web.facebook.com/joseph.otieno.963434?ref=bookmarks')}}" class="social-circle p-2">
+                    <span class="icon-facebook"></span></a>
+                <a href="{{('https://www.instagram.com/joseogam/')}}" class="social-circle p-2"><span class="icon-instagram"></span></a>
+                <a href="{{('https://github.com/JoseOgam')}}" class="social-circle p-2"><span class="icon-github"></span></a>
+                <a href="{{('https://www.linkedin.com/in/joseph-otieno-73a99b168/')}}" class="social-circle p-2"><span class="icon-linkedin"></span></a>
             </div>
         </div>
 
@@ -347,7 +369,7 @@
                 <p>Copyright &copy;
                     <script>document.write(new Date().getFullYear());</script>
                     All rights reserved | Developed <i
-                            class="icon-heart-o" aria-hidden="true"></i> by <a href="#"
+                            class="icon-heart-o" aria-hidden="true"></i> by <a href="{{('https://github.com/JoseOgam')}}"
                                                                                target="_blank">JoseOgam</a></p>
                 <!-- Copyright -->
 
