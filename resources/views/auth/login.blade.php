@@ -1,14 +1,17 @@
-@extends('layouts.app')
+@extends('layouts.base')
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+    <div class="row">
+        <div class="col-md-8 col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card card-signin my-5">
+                <div class="card-header text-center">
+                    <div class="col-12 text-center">
+                        <img class="rounded-circle text-center" src="{{('images/blog5.jpg')}}" width="100" height="100">
+                    </div>{{ __('Portfolio Login') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+                    <form class="form-signin" method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
@@ -20,6 +23,7 @@
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
+
                                     </span>
                                 @enderror
                             </div>

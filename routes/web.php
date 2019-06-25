@@ -19,10 +19,17 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/portfolio', 'PortfolioController@index')->name('portfolio');
+
 Route::get('/work', 'WorkController@index')->name('work');
 
 Route::post('/chat', 'ChatController@store');
 
 Route::get('/index', 'ChatController@index')->name('index');
 
-/**Route::get('/', 'chatController@index')->name(''); **/
+Route::group(['middleware' => 'web'], function () {
+    Route::get('fileUpload', function () {
+        return view('fileUpload');
+    });
+    Route::post('fileUpload', ['as'=>'fileUpload','uses'=>'HomeController@fileUpload']);
+});

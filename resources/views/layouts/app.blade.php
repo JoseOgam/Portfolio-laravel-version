@@ -35,6 +35,11 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="{{route('home')}}">
+                            <b>Home</b>
+                        </a>
+                    </li>
 
                 </ul>
 
@@ -81,5 +86,16 @@
         @yield('content')
     </main>
 </div>
+<script src="{{('js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{('js/jquery-ui.js')}}"></script>
+<script src="{{('js/popper.min.js')}}"></script>
+<script src="{{('js/bootstrap.min.js')}}"></script>
+<script src="{{('js/owl.carousel.min.js')}}"></script>
+<script src="{{('js/jquery.easing.1.3.js')}}"></script>
+<script src="{{('js/aos.js')}}"></script>
+<script src="{{('js/jquery.fancybox.min.js')}}"></script>
+<script src="{{('js/jquery.sticky.js')}}"></script>
+
+<script src="{{('js/main.js')}}"></script>
 </body>
 </html>

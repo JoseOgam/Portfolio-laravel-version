@@ -126,20 +126,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="#" class="nav-link active">
+                                <a href="{{(route('home'))}}" class="nav-link active">
                                     <i class="fa fa-circle-o nav-icon"></i>
                                     <p>Home</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">
+                                <a href="{{(route('work'))}}" class="nav-link active">
                                     <i class="fa fa-circle-o nav-icon"></i>
                                     <p>My Work</p>
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <!--<li class="nav-item">
                         <a href="#" class="nav-link">
                             <i class="nav-icon fa fa-th"></i>
                             <p>
@@ -147,7 +147,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 <span class="right badge badge-danger">New</span>
                             </p>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
             <!-- /.sidebar-menu -->

@@ -16,6 +16,8 @@ class CreateWorkTable extends Migration
         Schema::create('work', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
+            $table->string('description');
+            $table->string('images');
             $table->timestamps();
         });
     }
