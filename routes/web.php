@@ -25,11 +25,10 @@ Route::get('/work', 'WorkController@index')->name('work');
 
 Route::post('/chat', 'ChatController@store');
 
+Route::post('/project', 'ProjectController@store');
+
 Route::get('/index', 'ChatController@index')->name('index');
 
-Route::group(['middleware' => 'web'], function () {
-    Route::get('fileUpload', function () {
-        return view('fileUpload');
-    });
-    Route::post('fileUpload', ['as'=>'fileUpload','uses'=>'HomeController@fileUpload']);
-});
+Route::get('/work', 'WorkController@index')->name('work');
+
+
