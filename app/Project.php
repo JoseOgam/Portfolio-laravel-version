@@ -14,4 +14,8 @@ class Project extends Model
     ];
 
     protected $table = "project";
+
+    public static function find($id)
+    {
+    }
 }

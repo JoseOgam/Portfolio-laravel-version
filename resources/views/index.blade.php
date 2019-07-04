@@ -50,7 +50,6 @@
                         <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                             <li><a href="#home-section" class="nav-link">Home</a></li>
                             <li><a href="#about-section" class="nav-link">Skills</a></li>
-                            <li><a href="{{route('portfolio')}}">Portfolio</a></li>
                             <li><a href="#services-section" class="nav-link">I do..</a></li>
                         </ul>
                     </nav>
@@ -94,7 +93,14 @@
                             <p class="text-secondary">Junior full-stack Web application Developer</p>
                             <p class="lead">This is a platform where i sum up what i do, skills and technologies i use
                                 to implement my projects.</p>
-                            <p><a href="#contact-section" class="btn smoothscroll btn-primary">Contact Me</a></p>
+                            <div class="row mb-4">
+                                <div class="form-group col-6">
+                                    <p><a href="#contact-section" class="btn smoothscroll btn-primary">Contact Me</a></p>
+                                </div>
+                                <div class="form-group col-6">
+                                    <p><a href="{{route('portfolio')}}" class="btn smoothscroll btn-primary"> My Portfolio</a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -141,6 +141,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                     <p>Edit Work</p>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a href="{{(route('register'))}}" class="nav-link active">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>Register New User</p>
+                                </a>
+                            </li>
                         </ul>
                     </li>
                     <!--<li class="nav-item">

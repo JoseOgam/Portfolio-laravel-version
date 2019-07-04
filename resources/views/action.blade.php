@@ -26,9 +26,7 @@
                                 <td>
                                     <form action="#" method="#">
 
-                                        <a class="btn btn-success ui-icon-search" href="">Show</a>
-
-                                        <a class="btn btn-primary" href="{{url('edit')}}">Edit</a>
+                                        <a class="btn btn-primary" href="{{url('actions/{action}/edit')}}">Edit</a>
 
                                         @csrf
                                         @method('DELETE')

@@ -1,7 +1,7 @@
 @extends ('layouts.base')
 @section('content')
     <section class="nav-header row align-items-center justify-content-center">
-        <nav class="nav-item">
+        <nav class="nav-item align-items-end">
 
             <a href="{{route('index')}}"><i class="fa fa-home"></i>Home</a>
 
@@ -29,10 +29,14 @@
         </div>
     </section>
     <div class="">
-        <section id="team" class="pb-5 row animated zoomIn bg-info" style="animation-delay: 3s;">
+        <section id="team" class="pb-5 row animated zoomIn bg-gray" style="animation-delay: 3s;">
             <div class="container ">
-                <h5 class="section-title h4 text-center animated bounce infinite">Hi welcome to my portfolio
-                    section</h5>
+                <div class="text-truncate">
+                    <h5 class="section-title h4 text-center animated bounce infinite comment-text" style="">Hi welcome
+                        to my portfolio
+                        section</h5>
+                </div>
+
                 <table class="table table-bordered table-dark table-hover">
                     <div class="text-center card-tools">
                     </div>
@@ -47,9 +51,14 @@
                     <tbody>
                     @foreach( $project as $pro )
                         <tr>
-                            <div><td>{{$pro->project_title}}</td></div>
-                            <div><td>{{$pro->description}}</td></div>
-                            <div><td>  <a href="{{$pro->source_code}}" class="btn btn-primary btn-sm">
+                            <div>
+                                <td>{{$pro->project_title}}</td>
+                            </div>
+                            <div>
+                                <td>{{$pro->description}}</td>
+                            </div>
+                            <div>
+                                <td><a href="{{$pro->source_code}}" class="btn btn-primary btn-sm">
                                         <i class="fa fa-github"></i>source code</a></td>
                             </div>
                         </tr>
@@ -65,15 +74,18 @@
                 <div class="row mb-5">
                     <div class="col-12 text-center">
                         <h3 class="footer-title">Follow Me</h3>
-                        <a href="{{('https://twitter.com/joseogam')}}" class="social-circle p-2"><span class="icon-twitter ">
+                        <a href="{{('https://twitter.com/joseogam')}}" class="social-circle p-2"><span
+                                    class="icon-twitter ">
                     </span></a>
-                        <a href="{{('https://web.facebook.com/joseph.otieno.963434?ref=bookmarks')}}" class="social-circle p-2">
+                        <a href="{{('https://web.facebook.com/joseph.otieno.963434?ref=bookmarks')}}"
+                           class="social-circle p-2">
                             <span class="icon-facebook"></span></a>
                         <a href="{{('https://www.instagram.com/joseogam/')}}" class="social-circle p-2"><span
                                     class="icon-instagram"></span></a>
                         <a href="{{('https://github.com/JoseOgam')}}" class="social-circle p-2"><span
                                     class="icon-github"></span></a>
-                        <a href="{{('https://www.linkedin.com/in/joseph-otieno-73a99b168/')}}" class="social-circle p-2"><span
+                        <a href="{{('https://www.linkedin.com/in/joseph-otieno-73a99b168/')}}"
+                           class="social-circle p-2"><span
                                     class="icon-linkedin"></span></a>
                     </div>
                 </div>

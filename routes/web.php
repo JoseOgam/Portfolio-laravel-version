@@ -33,4 +33,4 @@ Route::get('/work', 'WorkController@index')->name('work');
 
 Route::get('/action', 'ActionController@index')->name('action');
 
-
+Route::Resource('actions', 'ActionController');

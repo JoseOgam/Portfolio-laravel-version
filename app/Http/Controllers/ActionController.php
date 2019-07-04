@@ -11,7 +11,6 @@ class ActionController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
      */
     public function __construct()
     {
@@ -26,7 +25,7 @@ class ActionController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return void
      */
     public function create()
     {
@@ -36,8 +35,8 @@ class ActionController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param  \Illuminate\Http\Request $request
+     * @return void
      */
     public function store(Request $request)
     {
@@ -52,40 +51,57 @@ class ActionController extends Controller
      */
     public function show(Action $action)
     {
-        //
+        $project = Project::find($action);
+        return view('actions.show', compact('project'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Action  $action
+     * @param $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Action $action)
+    public function edit($id)
     {
-        //
+        $project = Project::find($id);
+        return view('actions.edit', compact('project'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Action  $action
-     * @return \Illuminate\Http\Response
+     * @param  \Illuminate\Http\Request $request
+     * @param $id
+     * @return void
      */
-    public function update(Request $request, Action $action)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'project_title'=>'required',
+            'description'=>'required',
+            'source_code'=>'required'
+        ]);
+
+        $project = Project::find($id);
+        $project->project_title =  $request->get('project_title');
+        $project->description =  $request->get('description');
+        $project->source_code =  $request->get('source_code');
+        $project->save();
+
+        return redirect('actions.edit')->with('success','updated successfully');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Action  $action
-     * @return \Illuminate\Http\Response
+     * @param $id
+     * @return void
      */
-    public function destroy(Action $action)
+    public function destroy($id)
     {
-        //
+        $project = Project::find($id);
+        $project->delete();
+
+        return redirect('action')->with('success', 'project deleted!');
     }
 }
