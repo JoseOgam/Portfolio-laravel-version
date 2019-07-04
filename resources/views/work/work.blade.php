@@ -56,7 +56,7 @@
 
                 <div class="row mb-4">
                     <div class="form-group col-6">
-                        <input type="text" class="form-control" placeholder="project url" name="source_code">
+                        <input type="text" class="form-control" placeholder="project github url" name="source_code">
                     </div>
                 </div>
                 <div class="row">

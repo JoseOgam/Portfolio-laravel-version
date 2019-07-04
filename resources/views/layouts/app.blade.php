@@ -37,7 +37,7 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
                         <a href="{{route('home')}}">
-                            <b>Home</b>
+                            <span class="fa fa-home">Home</span>
                         </a>
                     </li>
 

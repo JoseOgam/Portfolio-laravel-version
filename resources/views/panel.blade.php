@@ -17,8 +17,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -134,7 +132,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                             <li class="nav-item">
                                 <a href="{{(route('work'))}}" class="nav-link active">
                                     <i class="fa fa-circle-o nav-icon"></i>
-                                    <p>My Work</p>
+                                    <p>Add portfolio</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{(route('action'))}}" class="nav-link active">
+                                    <i class="fa fa-circle-o nav-icon"></i>
+                                    <p>Edit Work</p>
                                 </a>
                             </li>
                         </ul>
@@ -175,15 +179,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- /.control-sidebar -->
 
         <!-- Main Footer -->
-        <footer class="main-footer">
-            <!-- To the right -->
-            <div class="float-right d-none d-sm-inline">
-    </div>
-            <!-- Default to the left -->
-            <p>Copyright &copy;
-                <script>document.write(new Date().getFullYear());</script>
-                All rights reserved | JoseOgam
-        </footer>
     </div>
     <!-- ./wrapper -->
 

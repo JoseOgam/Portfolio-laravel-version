@@ -4,8 +4,6 @@
     <title>JoseOgam &mdash; portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="{{('css/bootstrap.min.css')}}">
@@ -69,9 +67,12 @@
 
 
                     <div class="d-inline-block d-lg-none" style="position: relative; top: 3px;">
-                        <a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3">
-
-                            </span></a></div>
+                        <a href="#" class="site-menu-toggle js-menu-toggle float-right">
+                            <span class="dropdown">
+                                <p class="btn smoothscroll btn-info">Menu</p>
+                            </span>
+                        </a>
+                    </div>
 
                 </div>
 
@@ -123,7 +124,7 @@
                                 A good web design is easy to use, aesthetically pleasing, and suits the user group and
                                 brand
                                 of the website.
-                                My  keystone of a web design is to output a site that wins and fosters the trust of
+                                My keystone of a web design is to output a site that wins and fosters the trust of
                                 the target audience, removing as many potential points of user frustration as possible
                                 is a critical consideration.</p></div>
                     </div>
@@ -143,9 +144,9 @@
 
                                 The web development hierarchy is as follows: </p>
                             <ul>
-                               <li>Client-side coding</li>
+                                <li>Client-side coding</li>
                                 <li>Server-side coding</li>
-                               <li> Database technology</li>
+                                <li> Database technology</li>
                             </ul>
                         </div>
                     </div>
@@ -347,36 +348,41 @@
         </form>
     </div>
 </section>
-
-<footer class="site-section bg-light footer">
+<section class="site-footer">
+<footer class="site-section footer" style="background-color: #1d643b">
     <div class="container">
         <div class="row mb-5">
             <div class="col-12 text-center">
                 <h3 class="footer-title">Follow Me</h3>
-                <a href="{{('https://twitter.com/joseogam')}}" class="social-circle p-2"><span class="icon-twitter">
+                <a href="{{('https://twitter.com/joseogam')}}" class="social-circle p-2"><span class="icon-twitter ">
                     </span></a>
                 <a href="{{('https://web.facebook.com/joseph.otieno.963434?ref=bookmarks')}}" class="social-circle p-2">
                     <span class="icon-facebook"></span></a>
-                <a href="{{('https://www.instagram.com/joseogam/')}}" class="social-circle p-2"><span class="icon-instagram"></span></a>
-                <a href="{{('https://github.com/JoseOgam')}}" class="social-circle p-2"><span class="icon-github"></span></a>
-                <a href="{{('https://www.linkedin.com/in/joseph-otieno-73a99b168/')}}" class="social-circle p-2"><span class="icon-linkedin"></span></a>
+                <a href="{{('https://www.instagram.com/joseogam/')}}" class="social-circle p-2"><span
+                            class="icon-instagram"></span></a>
+                <a href="{{('https://github.com/JoseOgam')}}" class="social-circle p-2"><span
+                            class="icon-github"></span></a>
+                <a href="{{('https://www.linkedin.com/in/joseph-otieno-73a99b168/')}}" class="social-circle p-2"><span
+                            class="icon-linkedin"></span></a>
             </div>
         </div>
 
         <div class="row">
             <div class="col-12 text-center">
                 <!-- copyright -->
-                <p>Copyright &copy;
+                <p class="text-danger">Copyright &copy;
                     <script>document.write(new Date().getFullYear());</script>
                     All rights reserved | Developed <i
-                            class="icon-heart-o" aria-hidden="true"></i> by <a href="{{('https://github.com/JoseOgam')}}"
-                                                                               target="_blank">JoseOgam</a></p>
+                            class="icon-heart-o" aria-hidden="true"></i> by <a
+                            href="{{('https://github.com/JoseOgam')}}"
+                            target="_blank" class="text-info">JoseOgam</a></p>
                 <!-- Copyright -->
 
             </div>
         </div>
     </div>
 </footer><!-- .site-wrap -->
+</section>
 
 <script src="{{('js/jquery-3.3.1.min.js')}}"></script>
 <script src="{{('js/jquery-ui.js')}}"></script>

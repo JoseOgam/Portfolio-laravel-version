@@ -31,4 +31,6 @@ Route::get('/index', 'ChatController@index')->name('index');
 
 Route::get('/work', 'WorkController@index')->name('work');
 
+Route::get('/action', 'ActionController@index')->name('action');
+
 
