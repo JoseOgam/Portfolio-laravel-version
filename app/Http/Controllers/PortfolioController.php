@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Portfolio;
 use App\Project;
 use Illuminate\Http\Request;
 

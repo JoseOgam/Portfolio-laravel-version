@@ -3,10 +3,12 @@
 <head>
     <title>JoseOgam &mdash; portfolio</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="{{('fonts/icomoon/style.css')}}">
 
     <link rel="stylesheet" href="{{('css/bootstrap.min.css')}}">
+     <link rel="stylesheet" href="{{('fontsome/css/fontawesome.css')}}">
     <link rel="stylesheet" href="{{('css/jquery-ui.css')}}">
     <link rel="stylesheet" href="{{('css/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{('css/owl.theme.default.min.css')}}">
@@ -20,98 +22,86 @@
 
     <link rel="stylesheet" href="{{('css/aos.css')}}">
 
-    <link rel="stylesheet" href="{{('css/style.css')}}">
+    <link rel="stylesheet" href="{{('css/styl.css')}}">
+
+    <link href="{{('img/favicon.ico')}}" rel="icon">
+
+    <link href="{{('lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+    <link href="{{('lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+
+    <link href="{{('css/style.css')}}" rel="stylesheet">
 
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-<div class="site-wrap">
 
-    <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-            <div class="site-mobile-menu-close mt-3">
-                <span class="icon-close2 js-menu-toggle"></span>
-            </div>
-        </div>
-        <div class="site-mobile-menu-body"></div>
-    </div>
-
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
-
-        <div class="container-fluid">
-            <div class="row align-items-center justify-content-center">
-                <a class="navbar-brand" href="#home-section">
+<section class="hero" id="home">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-12">
+                <a class="hero-brand" href="#home" title="Home">
                     <img class="rounded-circle" src="{{('images/credo_img_1.jpg')}}" alt="" height="80" width="80">
                 </a>
-
-                <div class="">
-                    <nav class="site-navigation position-relative text-right" role="navigation">
-                        <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                            <li><a href="#home-section" class="nav-link">Home</a></li>
-                            <li><a href="#about-section" class="nav-link">Skills</a></li>
-                            <li><a href="#services-section" class="nav-link">I do..</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-                <div class="text-left">
-
-
-                    <nav class="site-navigation position-relative" role="navigation">
-                        <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                            <li><a href="#contact-section" class="nav-link">Contact</a></li>
-                        </ul>
-                    </nav>
-
-
-                    <div class="d-inline-block d-lg-none" style="position: relative; top: 3px;">
-                        <a href="#" class="site-menu-toggle js-menu-toggle float-right">
-                            <span class="dropdown">
-                                <p class="btn smoothscroll btn-info">Menu</p>
-                            </span>
-                        </a>
-                    </div>
-
-                </div>
-
             </div>
         </div>
 
-    </header>
-
-
-    <div class="site-blocks-cover overlay bg-light" id="home-section">
-
-        <div class="container">
-            <div class="row justify-content-center">
-
-                <div class="col-md-12 mt-lg-5 text-left align-self-center text-intro">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <h1 class="text-white">Hi, am Joseph</h1>
-                            <p class="text-secondary">Junior full-stack Web application Developer</p>
-                            <p class="lead">This is a platform where i sum up what i do, skills and technologies i use
-                                to implement my projects.</p>
-                            <div class="row mb-4">
-                                <div class="form-group col-6">
-                                    <p><a href="#contact-section" class="btn smoothscroll btn-primary">Contact Me</a></p>
-                                </div>
-                                <div class="form-group col-6">
-                                    <p><a href="{{route('portfolio')}}" class="btn smoothscroll btn-primary"> My Portfolio</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="col-md-12">
+            <h1 class="text-warning">
+                Hi, am Joseph
+            </h1>
+            <p class="text-secondary">I'm full-stack Web application Developer</p>
+            <p class="text-light">This is a platform where i sum up what i do, skills and technologies i use
+                to implement my projects.</p>
+            <a class="btn btn-full" href="#services-section">Get Started Now</a>
         </div>
-
-        <img src="{{('images/blog5.jpg')}}" alt="Image" class="img-face">
-
     </div>
 
+</section>
+<!-- /Hero -->
+
+<!-- Header -->
+<header id="header">
+    <div class="row align-items-center justify-content-center">
+
+        <div id="logo" class="pull-left">
+            <a href="#home">
+                <img src="{{('img/logo-nav.png')}}" alt="" title="" >
+            </a>
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li><a href="{{(route('index'))}}">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#skills-section">skills</a></li>
+                <li><a href="{{(route('portfolio'))}}">Portfolio</a></li>
+                <li><a href="#">Blog</a></li>
+                <li class="menu-has-children"><a href="">My services</a>
+                    <ul>
+                        <li><a href="#">Drop Down 1</a></li>
+                        <li class="menu-has-children"><a href="#">Drop Down 2</a>
+                            <ul>
+                                <li><a href="#">Deep Drop Down 1</a></li>
+                                <li><a href="#">Deep Drop Down 2</a></li>
+                                <li><a href="#">Deep Drop Down 3</a></li>
+                                <li><a href="#">Deep Drop Down 4</a></li>
+                                <li><a href="#">Deep Drop Down 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Drop Down 3</a></li>
+                        <li><a href="#">Drop Down 4</a></li>
+                        <li><a href="#">Drop Down 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact-section">Contact me</a></li>
+            </ul>
+        </nav>
+        <!-- #nav-menu-container -->
+    </div>
+</header>
+<!-- #header -->
     <div class="site-section bg-dark" id="services-section">
         <div class="container">
             <div class="row ">
@@ -162,7 +152,7 @@
     </div>
 
 
-    <div class="site-section bg-secondary" id="about-section">
+    <div class="site-section bg-secondary" id="skills-section">
         <div class="container">
             <div class="row ">
                 <div class="col-12 mb-4 position-relative">
@@ -228,7 +218,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
+               <!-- <div class="col-md-6 mb-4">
                     <strong class="text-info">js/React</strong>
                     <div class="progress">
                         <div class="progress-bar bg-info" role="progressbar" aria-valuenow="0" aria-valuemin="0"
@@ -247,7 +237,7 @@
                             <span class="bg-success">30%</span>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
 
         </div>
@@ -319,7 +309,9 @@
             {{ csrf_field() }}
             <div class="row mb-4">
                 <div class="form-group col-6">
-                    <input type="text" class="form-control" placeholder="First name" name="first_name">
+                    <label>
+                        <input type="text" class="form-control" placeholder="First name" name="first_name">
+                    </label>
                 </div>
                 <div class="form-group col-6">
                     <input type="text" class="form-control" placeholder="Last name" name="last_name">
@@ -354,41 +346,48 @@
         </form>
     </div>
 </section>
-<section class="site-footer">
-<footer class="site-section footer" style="background-color: #1d643b">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-12 text-center">
-                <h3 class="footer-title">Follow Me</h3>
-                <a href="{{('https://twitter.com/joseogam')}}" class="social-circle p-2"><span class="icon-twitter ">
+<div>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h3 class="footer-title">Follow Me</h3>
+                    <a href="{{('https://twitter.com/joseogam')}}" class="social-circle p-2"><span
+                                class="fa fa-twitter fa-2x"
+                                style="color: white">
                     </span></a>
-                <a href="{{('https://web.facebook.com/joseph.otieno.963434?ref=bookmarks')}}" class="social-circle p-2">
-                    <span class="icon-facebook"></span></a>
-                <a href="{{('https://www.instagram.com/joseogam/')}}" class="social-circle p-2"><span
-                            class="icon-instagram"></span></a>
-                <a href="{{('https://github.com/JoseOgam')}}" class="social-circle p-2"><span
-                            class="icon-github"></span></a>
-                <a href="{{('https://www.linkedin.com/in/joseph-otieno-73a99b168/')}}" class="social-circle p-2"><span
-                            class="icon-linkedin"></span></a>
+                    <a href="{{('https://web.facebook.com/joseph.otieno.963434?ref=bookmarks')}}"
+                       class="social-circle p-2">
+                        <span class="fa fa-facebook fa-2x" style="color: white"></span></a>
+                    <a href="{{('https://www.instagram.com/joseogam/')}}" class="social-circle p-2"><span
+                                class="fa fa-instagram fa-2x" style="color: white"></span></a>
+                    <a href="{{('https://github.com/JoseOgam')}}" class="social-circle p-2"><span
+                                class="fa fa-github fa-2x" style="color: white"></span></a>
+                    <a href="{{('https://www.linkedin.com/in/joseph-otieno-73a99b168/')}}"
+                       class="social-circle p-2"><span
+                                class="fa fa-linkedin fa-2x" style="color: white"></span></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-center">
+                    <!-- copyright -->
+                    <p class="text-danger">Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | Developed <i
+                                class="icon-heart-o" aria-hidden="true"></i> by <a
+                                href="{{('https://github.com/JoseOgam')}}"
+                                target="_blank" class="text-info">JoseOgam</a></p>
+                    <!-- Copyright -->
+
+                </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-12 text-center">
-                <!-- copyright -->
-                <p class="text-danger">Copyright &copy;
-                    <script>document.write(new Date().getFullYear());</script>
-                    All rights reserved | Developed <i
-                            class="icon-heart-o" aria-hidden="true"></i> by <a
-                            href="{{('https://github.com/JoseOgam')}}"
-                            target="_blank" class="text-info">JoseOgam</a></p>
-                <!-- Copyright -->
-
-            </div>
-        </div>
-    </div>
-</footer><!-- .site-wrap -->
-</section>
+    </footer>
+</div>
+<div class="col-lg-12">
+    <a class="scrolltop" href="#"><span class="icon-angle-up"></span></a>
+</div>
 
 <script src="{{('js/jquery-3.3.1.min.js')}}"></script>
 <script src="{{('js/jquery-ui.js')}}"></script>
@@ -401,6 +400,38 @@
 <script src="{{('js/jquery.sticky.js')}}"></script>
 
 <script src="{{('js/main.js')}}"></script>
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/jquery/jquery-migrate.min.js"></script>
+<script src="lib/superfish/hoverIntent.js"></script>
+<script src="lib/superfish/superfish.min.js"></script>
+<script src="lib/tether/js/tether.min.js"></script>
+<script src="lib/stellar/stellar.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/easing/easing.js"></script>
+<script src="lib/stickyjs/sticky.js"></script>
+<script src="lib/parallax/parallax.js"></script>
+<script src="lib/lockfixed/lockfixed.min.js"></script>
+
+<!-- Template Specisifc Custom Javascript File -->
+<script src="js/custom.js"></script>
+
+<script src="{{('contactform/contactform.js')}}"></script>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function(){
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5d2d4b179b94cd38bbe78a2e/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
 
 
 </body>
