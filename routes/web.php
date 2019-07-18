@@ -11,6 +11,9 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('index');
 });
@@ -32,5 +35,15 @@ Route::get('/index', 'ChatController@index')->name('index');
 Route::get('/work', 'WorkController@index')->name('work');
 
 Route::get('/action', 'ActionController@index')->name('action');
+
+Route::get('/brand', 'BrandController@index')->name('brand');
+
+Route::get('/personal', 'PersonalController@index')->name('personal');
+
+Route::get('/startup', 'StartupController@index')->name('startup');
+
+Route::get('/log', 'VlogController@index')->name('log');
+
+Route::get('/bizz', 'BizzController@index')->name('bizz');
 
 Route::Resource('actions', 'ActionController');
